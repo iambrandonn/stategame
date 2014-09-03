@@ -1,3 +1,11 @@
+/* 
+	Yes, inquisitive one who pokes around in code rather than paying attention... 
+	You will be rewarded for your curiousity.  Be the first to raise your hand and 
+	say "Cowabunga", you will get a doughnut of your own!
+
+	P.S. Please don't judge me on this throw away code I put together for the meeting :)
+*/
+
 var username;
 var disabled = false;
 var guessTimeout;
@@ -23,6 +31,9 @@ $('img').mapster({
 		else {
 			alert('Please wait four seconds between guesses!');
 		}
+	},
+	wrapCss: {
+		display: 'inline-block'
 	}
 });
 

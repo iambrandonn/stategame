@@ -9,6 +9,10 @@ body {
 	position: absolute;
 }
 
+.play {
+	text-align: center;
+}
+
 .login {
 	z-index: 2;
 	opacity: 0.93;
@@ -33,6 +37,7 @@ body {
 
 .map {
 	max-width: 1000px;
+
 }
 
 .join-button {
@@ -52,7 +57,7 @@ body {
 	font-weight:bold;
 	font-style:normal;
 	height:65px;
-	line-height:65px;
+	line-height:62px;
 	width:131px;
 	text-decoration:none;
 	text-align:center;

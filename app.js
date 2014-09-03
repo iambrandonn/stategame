@@ -18,6 +18,8 @@ io.on('connection', function(socket) {
 		socket.user = msg;
 		addUser(msg);
 		socket.broadcast.emit('joined', JSON.stringify(users));
+
+		io.sockets.emit('nextPic', states[stateIndex]);
 	});
 
 	socket.on('guess', function(msg) {

@@ -5,9 +5,11 @@ var socket = io();
 var app = angular.module('images', []);
 app.controller('scoreboardCtrl', ['$scope', function($scope) {
 	$scope.winnerName = undefined;
-	$scope.state = 'KY';
+	$scope.users = [];
+	$scope.started = false;
 
 	$scope.next = function() {
+		$scope.started = true;
 		$scope.winnerName = undefined;
 	};
 

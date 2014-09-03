@@ -12,10 +12,12 @@
 		</div>
 
 		<span class="scoreboard">
-			<div class="next-button">
-			</div>
+			<div class="scoreboard-title">Scoreboard</div>
 
 			<ol>
+				<li ng-show="users.length === 0">
+					No one here yet :(
+				</li>
 				<li ng-repeat="user in users">
 					<span class="score">{{user.score}}</span>
 					<span class="users-name">{{user.name}}</span>
@@ -23,10 +25,13 @@
 			</ol>
 		</span>
 		<span class="pic">
-			<img src="images/{{state}}.jpg" />
+			<img src="images/{{state}}.jpg" ng-if="started" />
+			<span class="will-show-here" ng-hide="started">
+				The pictures will show here.
+			</span>
 		</span>
 
-		<div class="winner-announcement" ng-class="{hiding: winnerName == undefined}">
+		<div class="winner-announcement" ng-if="started" ng-class="{hiding: winnerName == undefined}">
 			{{winnerName}}
 		</div>
 
