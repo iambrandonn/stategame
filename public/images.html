@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="images">
+	<head>
+		<link href="images.css" rel="stylesheet" />
+		<title>Where is it?</title>
+	</head>
+	<body ng-controller="scoreboardCtrl">
+		<div class="instructions">
+			http://whatstate.herokuapp.com
+
+			<button class="next-button" ng-click="next()">Next</button>
+		</div>
+
+		<span class="scoreboard">
+			<div class="next-button">
+			</div>
+
+			<ol>
+				<li ng-repeat="user in users">
+					<span class="score">{{user.score}}</span>
+					<span class="users-name">{{user.name}}</span>
+				</li>
+			</ol>
+		</span>
+		<span class="pic">
+			<img src="images/{{state}}.jpg" />
+		</span>
+
+		<div class="winner-announcement" ng-class="{hiding: winnerName == undefined}">
+			{{winnerName}}
+		</div>
+
+	  <script src="jquery.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+	  <script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>	  
+	  <script src="images.js"></script>
+	</body>
+</html>

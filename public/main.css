@@ -1,0 +1,68 @@
+body {
+	background-color: black;
+	margin: 0;
+}
+
+.login, .play {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.login {
+	z-index: 2;
+	opacity: 0.93;
+	background-color: #210;
+	padding: 100px 0;
+}
+
+.username, .join-button {
+	display: block;
+	margin: 0 auto;
+}
+
+.username {
+	width: 400px;
+	padding: 8px;
+	font-size: 25px;
+	border-radius: 6px;
+	background-color: #EBE9DD;
+	border: 0;
+	box-shadow: 0 0 34px 1px #fce2c1;
+}
+
+.map {
+	max-width: 1000px;
+}
+
+.join-button {
+	cursor: pointer;
+	outline: 0;
+	margin-top: 35px;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	background-color:#ffc477;
+	border-radius:20px;
+	text-indent:0;
+	border:1px solid #eeb44f;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:24px;
+	font-weight:bold;
+	font-style:normal;
+	height:65px;
+	line-height:65px;
+	width:131px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow: 2px 1px 5px #4E350A;
+}
+
+.playing-as {
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	font-family: sans-serif;
+	padding: 15px;
+}
