@@ -1,0 +1,24 @@
+{
+  "name": "stategame",
+  "version": "0.0.0",
+  "description": "stategame =========",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.8.7",
+    "socket.io": "^1.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iambrandonn/stategame.git"
+  },
+  "author": "Brandon Nicholls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iambrandonn/stategame/issues"
+  },
+  "homepage": "https://github.com/iambrandonn/stategame"
+}
