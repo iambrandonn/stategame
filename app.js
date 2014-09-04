@@ -4,7 +4,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 var users = [];
-var states = ['KY', 'OR', 'GA', 'AZ', 'IL', 'WY', 'OH', 'NY', 'MO'];
+var states = ['KY', 'OR', 'GA', 'AZ', 'IL', 'WY', 'OH', 'NY', 'MO', 'AL', 'WV', 'CA', 'WA', 'FL', 'PA', 'CO', 'NC', 'NM', 'SC', 'TX', 'VT', ];
 var stateIndex = 0;
 
 app.use(express.static(__dirname + '/public'));
